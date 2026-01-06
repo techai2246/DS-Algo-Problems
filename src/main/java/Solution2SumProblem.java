@@ -1,8 +1,4 @@
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.stream.Collectors;
 
 public class Solution2SumProblem {
     //Bruteforce Approach complexity would order of nˆ2
@@ -23,7 +19,6 @@ public class Solution2SumProblem {
     }
 
     //Optimal Approach complexity would order of n
-
     public int[] twoSumOptimal(int[] nums, int target){
         int[] result = new int[2];
         //LinkedList<Integer> integerList = Arrays.stream(nums).boxed().collect(Collectors.toCollection(LinkedList::new));
