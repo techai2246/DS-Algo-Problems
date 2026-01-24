@@ -21,7 +21,6 @@ public class Solution2SumProblem {
     //Optimal Approach complexity would order of n
     public int[] twoSumOptimal(int[] nums, int target){
         int[] result = new int[2];
-        //LinkedList<Integer> integerList = Arrays.stream(nums).boxed().collect(Collectors.toCollection(LinkedList::new));
         ArrayList<Integer> integerList = new ArrayList<>();
         for(int element: nums){
             integerList.add(element);
@@ -32,6 +31,7 @@ public class Solution2SumProblem {
             if(integerList.contains(complement)){
                 result[1]=integerList.indexOf(element);
                 result[0]=integerList.lastIndexOf(complement);
+                break;
             }
         }
         return result;
@@ -39,8 +39,8 @@ public class Solution2SumProblem {
 
     public static void main(String[] args) {
         Solution2SumProblem solution = new Solution2SumProblem();
-        int[] nums = {1, 3, 5, -7, 6, -3};
-        int target = 0;
+        int[] nums = {2,4,11,3};
+        int target = 6;
         int[] result = solution.twoSum(nums, target);
         int[] resultOptimal = solution.twoSumOptimal(nums, target);
         System.out.println("[" + result[0] + ", " + result[1] + "]");
