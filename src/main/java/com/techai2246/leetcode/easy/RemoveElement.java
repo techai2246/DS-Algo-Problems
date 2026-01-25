@@ -1,3 +1,5 @@
+package com.techai2246.leetcode.easy;
+
 public class RemoveElement {
     public int removeElement(int[] nums, int val) {
         int removedElement=0;

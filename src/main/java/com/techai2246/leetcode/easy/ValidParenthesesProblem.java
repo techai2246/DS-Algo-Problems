@@ -1,3 +1,5 @@
+package com.techai2246.leetcode.easy;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Stack;

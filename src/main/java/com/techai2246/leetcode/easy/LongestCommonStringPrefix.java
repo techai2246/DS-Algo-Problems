@@ -1,3 +1,5 @@
+package com.techai2246.leetcode.easy;
+
 public class LongestCommonStringPrefix {
 
     public static void main(String[] args) {

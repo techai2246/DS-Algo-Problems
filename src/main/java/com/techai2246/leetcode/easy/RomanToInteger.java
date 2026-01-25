@@ -1,3 +1,5 @@
+package com.techai2246.leetcode.easy;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedHashMap;

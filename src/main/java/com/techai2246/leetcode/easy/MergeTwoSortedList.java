@@ -1,3 +1,5 @@
+package com.techai2246.leetcode.easy;
+
 public class MergeTwoSortedList {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         boolean isFirstElement = true;

@@ -12,16 +12,16 @@ This learning repository includes solutions to fundamental algorithmic problems 
 DS-Algo-Problems/
 ├── README.md
 └── src/main/java/
-    ├── LongestCommonStringPrefix.java
-    ├── PalindromeProblem.java
-    ├── RomanToInteger.java
-    ├── Solution2SumProblem.java
-    └── ValidParenthesesProblem.java
+    ├── com.techai2246.leetcode.easy.LongestCommonStringPrefix.java
+    ├── com.techai2246.leetcode.easy.PalindromeProblem.java
+    ├── com.techai2246.leetcode.easy.RomanToInteger.java
+    ├── com.techai2246.leetcode.easy.Solution2SumProblem.java
+    └── com.techai2246.leetcode.easy.ValidParenthesesProblem.java
 ```
 
 ## 🔑 Problems Included
 
-### 1. **2Sum Problem** (`Solution2SumProblem.java`)
+### 1. **2Sum Problem** (`com.techai2246.leetcode.easy.Solution2SumProblem.java`)
 Find two numbers in an array that add up to a target sum and return their indices.
 
 **Approaches:**
@@ -41,7 +41,7 @@ Output: [0, 3]  (nums[0] + nums[3] = 2 + 3 = 5... adjusted example)
 
 ---
 
-### 2. **Valid Parentheses** (`ValidParenthesesProblem.java`)
+### 2. **Valid Parentheses** (`com.techai2246.leetcode.easy.ValidParenthesesProblem.java`)
 Validate if a string containing parentheses, curly braces, and square brackets is correctly matched.
 
 **Algorithm:**
@@ -64,7 +64,7 @@ Output: false (mismatched braces)
 
 ---
 
-### 3. **Longest Common String Prefix** (`LongestCommonStringPrefix.java`)
+### 3. **Longest Common String Prefix** (`com.techai2246.leetcode.easy.LongestCommonStringPrefix.java`)
 Find the longest common prefix shared by all strings in an array.
 
 **Algorithm:**
@@ -83,7 +83,7 @@ Output: "f"
 
 ---
 
-### 4. **Palindrome Problem** (`PalindromeProblem.java`)
+### 4. **Palindrome Problem** (`com.techai2246.leetcode.easy.PalindromeProblem.java`)
 Check if an integer number is a palindrome.
 
 **Approaches:**
@@ -106,7 +106,7 @@ Output: false
 
 ---
 
-### 5. **Roman to Integer** (`RomanToInteger.java`)
+### 5. **Roman to Integer** (`com.techai2246.leetcode.easy.RomanToInteger.java`)
 Convert a Roman numeral string to its integer representation.
 
 **Algorithm:**
@@ -146,11 +146,11 @@ javac src/main/java/*.java
 
 ### Run Individual Programs
 ```bash
-java -cp src/main/java Solution2SumProblem
-java -cp src/main/java ValidParenthesesProblem
-java -cp src/main/java LongestCommonStringPrefix
-java -cp src/main/java PalindromeProblem
-java -cp src/main/java RomanToInteger
+java -cp src/main/java com.techai2246.leetcode.easy.Solution2SumProblem
+java -cp src/main/java com.techai2246.leetcode.easy.ValidParenthesesProblem
+java -cp src/main/java com.techai2246.leetcode.easy.LongestCommonStringPrefix
+java -cp src/main/java com.techai2246.leetcode.easy.PalindromeProblem
+java -cp src/main/java com.techai2246.leetcode.easy.RomanToInteger
 ```
 
 ## 📊 Complexity Analysis Summary

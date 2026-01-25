@@ -1,3 +1,5 @@
+package com.techai2246.leetcode.easy;
+
 public class RemoveDuplicateFromSortedArray {
 
     public int removeDuplicates(int[] nums) {

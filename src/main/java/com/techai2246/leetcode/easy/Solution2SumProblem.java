@@ -1,3 +1,5 @@
+package com.techai2246.leetcode.easy;
+
 import java.util.ArrayList;
 
 public class Solution2SumProblem {

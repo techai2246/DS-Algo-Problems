@@ -1,3 +1,5 @@
+package com.techai2246.leetcode.easy;
+
 public class PalindromeProblem {
 
     public boolean isPalindrome(int num){
