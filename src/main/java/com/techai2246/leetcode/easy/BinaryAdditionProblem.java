@@ -1,7 +1,5 @@
 package com.techai2246.leetcode.easy;
 
-import java.util.Arrays;
-
 public class BinaryAdditionProblem {
     public String addBinary(String a, String b) {
         int firstStringLength=a.length();
@@ -29,6 +27,7 @@ public class BinaryAdditionProblem {
         }
         return result.reverse().toString();
     }
+
 
     public static void main(String[] args) {
         BinaryAdditionProblem binaryAdditionProblem = new BinaryAdditionProblem();
