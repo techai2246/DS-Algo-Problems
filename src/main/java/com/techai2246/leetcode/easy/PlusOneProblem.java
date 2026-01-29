@@ -1,6 +1,39 @@
 package com.techai2246.leetcode.easy;
 
+/**
+ * PlusOneProblem - Adds one to a number represented as an array of digits.
+ *
+ * Problem Description:
+ * You are given a large integer represented as an integer array digits,
+ * where each digits[i] is the ith digit of the integer.
+ * The digits are ordered from most significant to least significant in left-to-right order.
+ * Increment the large integer by one and return the resulting array of digits.
+ *
+ * Example:
+ * Input: digits = [1,2,3]
+ * Output: [1,2,4]
+ *
+ * Input: digits = [9,9,9]
+ * Output: [1,0,0,0]
+ *
+ * Algorithm:
+ * - Add 1 to the last digit
+ * - Handle carry propagation from right to left
+ * - Expand array if necessary (when all digits are 9)
+ *
+ * Time Complexity: O(n)
+ * Space Complexity: O(n)
+ *
+ * @author techai2246
+ * @version 1.0
+ */
 public class PlusOneProblem {
+    /**
+     * Adds one to a number represented as an array of digits.
+     *
+     * @param digits array representing digits of the number
+     * @return array with result of adding one
+     */
     public int[] plusOne(int[] digits) {
         int originalArrayLength = digits.length;
         int [] finalIntegerArray = new int[originalArrayLength+1];

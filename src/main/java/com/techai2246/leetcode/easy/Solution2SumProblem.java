@@ -2,8 +2,38 @@ package com.techai2246.leetcode.easy;
 
 import java.util.ArrayList;
 
+/**
+ * Solution2SumProblem - Finds two numbers that add up to a target sum.
+ *
+ * Problem Description:
+ * Given an array of integers nums and an integer target,
+ * return the indices of the two numbers such that they add up to target.
+ * You may assume that each input has exactly one solution,
+ * and you may not use the same element twice.
+ *
+ * Example:
+ * Input: nums = [2, 4, 11, 3], target = 6
+ * Output: [0, 1]
+ * Explanation: nums[0] + nums[1] = 2 + 4 = 6
+ *
+ * Approaches:
+ * 1. Brute Force: Nested loop comparing all pairs → O(n²) time, O(1) space
+ * 2. Optimal: Using ArrayList for complement lookup → O(n) time, O(n) space
+ *
+ * Time Complexity: O(n) for optimal approach
+ * Space Complexity: O(n) for ArrayList
+ *
+ * @author techai2246
+ * @version 1.0
+ */
 public class Solution2SumProblem {
-    //Bruteforce Approach complexity would order of nˆ2
+    /**
+     * Finds two numbers that add up to target using brute force approach.
+     *
+     * @param nums array of integers
+     * @param target sum to find
+     * @return indices of two numbers that add up to target
+     */
     public int[] twoSum(int[] nums, int target) {
         int result[]= new int[2];
         for(int i=0; i<=nums.length-2;i++){
@@ -20,7 +50,13 @@ public class Solution2SumProblem {
         return result;
     }
 
-    //Optimal Approach complexity would order of n
+    /**
+     * Finds two numbers that add up to target using optimal ArrayList approach.
+     *
+     * @param nums array of integers
+     * @param target sum to find
+     * @return indices of two numbers that add up to target
+     */
     public int[] twoSumOptimal(int[] nums, int target){
         int[] result = new int[2];
         ArrayList<Integer> integerList = new ArrayList<>();

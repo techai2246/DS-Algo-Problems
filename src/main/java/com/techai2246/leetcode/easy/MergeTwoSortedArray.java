@@ -1,6 +1,39 @@
 package com.techai2246.leetcode.easy;
 
+/**
+ * MergeTwoSortedArray - Merges two sorted arrays into a single sorted array.
+ *
+ * Problem Description:
+ * You are given two integer arrays nums1 and nums2, sorted in non-decreasing order,
+ * and two integers m and n, representing the number of valid elements in nums1 and nums2 respectively.
+ * Merge nums2 into nums1 as one sorted array.
+ *
+ * Example:
+ * Input: nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3
+ * Output: nums1 = [1,2,2,3,5,6]
+ *
+ * Algorithm:
+ * - Use two pointers to track positions in both arrays
+ * - Compare elements and add smaller one to temporary array
+ * - Handle remaining elements from both arrays
+ * - Copy merged result back to nums1
+ *
+ * Time Complexity: O(m + n)
+ * Space Complexity: O(m + n) for temporary array
+ *
+ * @author techai2246
+ * @version 1.0
+ */
 public class MergeTwoSortedArray {
+    /**
+     * Merges two sorted arrays into a single sorted array.
+     * Modifies nums1 in-place to contain the merged result.
+     *
+     * @param nums1 first sorted array with enough space for merged result
+     * @param m number of valid elements in nums1
+     * @param nums2 second sorted array
+     * @param n number of valid elements in nums2
+     */
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         int[] temp = new int[m+n];
         int j =0, k = 0, i=0, totalFilledNumbers = 0;;
