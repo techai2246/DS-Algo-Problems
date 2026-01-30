@@ -4,9 +4,9 @@ A comprehensive collection of **LeetCode Easy Level** Data Structures and Algori
 
 ## 📚 Project Overview
 
-This is a learning repository containing **18 carefully selected algorithmic problems** organized by difficulty level. Each solution demonstrates clean code practices with detailed explanations and complexity analysis. Perfect for interview preparation and understanding fundamental CS concepts.
+This is a learning repository containing **21 carefully selected algorithmic problems** organized by difficulty level. Each solution demonstrates clean code practices with detailed explanations and complexity analysis. Perfect for interview preparation and understanding fundamental CS concepts.
 
-**Total Problems:** 18 | **Difficulty:** Easy | **Language:** Java
+**Total Problems:** 21 | **Difficulty:** Easy | **Language:** Java
 
 ## 📁 Project Structure
 
@@ -28,9 +28,12 @@ DS-Algo-Problems/
     ├── RemoveDuplicateFromSortedArray.java
     ├── RemoveElement.java
     ├── RomanToInteger.java
+    ├── SameTreeChecker.java
     ├── SearchInsertPosition.java
     ├── Solution2SumProblem.java
     ├── SquareRootOfNumber.java
+    ├── TreeInorderTraversal.java
+    ├── TreeNode.java (Helper class)
     └── ValidParenthesesProblem.java
 ```
 
@@ -394,12 +397,63 @@ Explanation: 1+1+1, 1+2, 2+1
 
 ---
 
-#### 18. **Helper Class** (`ListNode.java`)
-Utility class for linked list node representation.
+### 🌳 Tree Problems
+
+#### 19. **Same Tree Checker** (`SameTreeChecker.java`)
+Check if two binary trees are identical in structure and values.
+
+**Algorithm:**
+- Use recursive approach to compare both trees simultaneously
+- Base case: both nodes are null (identical subtrees)
+- Check if one node is null and other isn't (different)
+- Check if node values match
+- Recursively check left and right subtrees
+
+**Complexity:**
+- Time: O(n) where n is minimum number of nodes in both trees
+- Space: O(h) where h is height (recursion stack)
+
+**Example:**
+```
+Tree1:      1          Tree2:      1
+           / \                    / \
+          2   3                  2   3
+Output: true
+```
+
+---
+
+#### 20. **Tree Inorder Traversal** (`TreeInorderTraversal.java`)
+Perform inorder traversal (Left → Node → Right) of a binary tree.
+
+**Algorithm:**
+- Recursively traverse the left subtree
+- Process the current node (add to result list)
+- Recursively traverse the right subtree
+
+**Complexity:**
+- Time: O(n) where n is number of nodes
+- Space: O(h) where h is height (recursion stack)
+
+**Example:**
+```
+Tree:       1
+             \
+              2
+             /
+            3
+Output: [1, 3, 2]
+```
+
+---
+
+#### 21. **Helper Class** (`TreeNode.java`)
+Utility class for binary tree node representation.
 
 **Features:**
-- Node with value and next pointer
-- Constructor for creating linked lists
+- Node with value, left, and right child pointers
+- Multiple constructors for tree creation
+- Fields for tree structure management
 
 ---
 
@@ -444,6 +498,8 @@ java -cp out com.techai2246.leetcode.easy.ClimbStairsProblem
 | Binary Addition | Math | O(n) | O(n) | ⭐ |
 | Square Root | Math | O(log n) | O(1) | ⭐ |
 | Climb Stairs | DP | O(n) | O(n) | ⭐ |
+| Same Tree Checker | Tree | O(n) | O(h) | ⭐ |
+| Inorder Traversal | Tree | O(n) | O(h) | ⭐ |
 
 ---
 
@@ -453,6 +509,7 @@ java -cp out com.techai2246.leetcode.easy.ClimbStairsProblem
 - **Arrays:** Iteration, modification, sorting
 - **Linked Lists:** Traversal, merging, deletion
 - **Stacks:** Parentheses matching
+- **Trees:** Binary tree traversal, tree comparison, recursion
 
 ### Algorithms
 - **Two Pointer Technique:** Merge operations, comparison
@@ -482,7 +539,8 @@ java -cp out com.techai2246.leetcode.easy.ClimbStairsProblem
 3. **Explore Linked Lists:** Merge Lists → Delete Duplicates
 4. **Add Math Skills:** Binary Addition → Square Root
 5. **Learn DP:** Climb Stairs
-6. **Practice Mixed:** All remaining problems
+6. **Understand Trees:** Tree Inorder Traversal → Same Tree Checker
+7. **Practice Mixed:** All remaining problems
 
 ---
 
@@ -496,5 +554,5 @@ Educational purposes only.
 
 ---
 
-**Last Updated:** January 29, 2026 | **Total Problems:** 18
+**Last Updated:** January 30, 2026 | **Total Problems:** 21
 
