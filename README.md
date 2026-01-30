@@ -4,9 +4,9 @@ A comprehensive collection of **LeetCode Easy Level** Data Structures and Algori
 
 ## 📚 Project Overview
 
-This is a learning repository containing **21 carefully selected algorithmic problems** organized by difficulty level. Each solution demonstrates clean code practices with detailed explanations and complexity analysis. Perfect for interview preparation and understanding fundamental CS concepts.
+This is a learning repository containing **22 carefully selected algorithmic problems** organized by difficulty level. Each solution demonstrates clean code practices with detailed explanations and complexity analysis. Perfect for interview preparation and understanding fundamental CS concepts.
 
-**Total Problems:** 21 | **Difficulty:** Easy | **Language:** Java
+**Total Problems:** 22 | **Difficulty:** Easy | **Language:** Java
 
 ## 📁 Project Structure
 
@@ -32,6 +32,7 @@ DS-Algo-Problems/
     ├── SearchInsertPosition.java
     ├── Solution2SumProblem.java
     ├── SquareRootOfNumber.java
+    ├── SymmetricTreeChecker.java
     ├── TreeInorderTraversal.java
     ├── TreeNode.java (Helper class)
     └── ValidParenthesesProblem.java
@@ -447,7 +448,32 @@ Output: [1, 3, 2]
 
 ---
 
-#### 21. **Helper Class** (`TreeNode.java`)
+#### 21. **Symmetric Tree Checker** (`SymmetricTreeChecker.java`)
+Check if a binary tree is symmetric (mirror image around its center).
+
+**Algorithm:**
+- Recursively compare left and right subtrees simultaneously
+- For symmetry: left.left must mirror right.right and left.right must mirror right.left
+- Base case: both nodes are null (symmetric)
+- Check if node values match and subtrees are symmetric
+
+**Complexity:**
+- Time: O(n) where n is the number of nodes
+- Space: O(h) where h is height (recursion stack)
+
+**Example:**
+```
+Tree:           1
+               /   \
+              2     2
+             / \   / \
+            3   4 4   3
+Output: true
+```
+
+---
+
+#### 22. **Helper Class** (`TreeNode.java`)
 Utility class for binary tree node representation.
 
 **Features:**
@@ -500,6 +526,7 @@ java -cp out com.techai2246.leetcode.easy.ClimbStairsProblem
 | Climb Stairs | DP | O(n) | O(n) | ⭐ |
 | Same Tree Checker | Tree | O(n) | O(h) | ⭐ |
 | Inorder Traversal | Tree | O(n) | O(h) | ⭐ |
+| Symmetric Tree Checker | Tree | O(n) | O(h) | ⭐ |
 
 ---
 
@@ -539,7 +566,7 @@ java -cp out com.techai2246.leetcode.easy.ClimbStairsProblem
 3. **Explore Linked Lists:** Merge Lists → Delete Duplicates
 4. **Add Math Skills:** Binary Addition → Square Root
 5. **Learn DP:** Climb Stairs
-6. **Understand Trees:** Tree Inorder Traversal → Same Tree Checker
+6. **Understand Trees:** Tree Inorder Traversal → Same Tree Checker → Symmetric Tree Checker
 7. **Practice Mixed:** All remaining problems
 
 ---
@@ -554,5 +581,5 @@ Educational purposes only.
 
 ---
 
-**Last Updated:** January 30, 2026 | **Total Problems:** 21
+**Last Updated:** January 30, 2026 | **Total Problems:** 22
 
